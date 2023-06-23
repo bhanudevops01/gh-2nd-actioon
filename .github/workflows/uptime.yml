@@ -1,0 +1,13 @@
+name: 2nd-workflow
+on: workflow_dispatch
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: get the uptime
+        run:  | 
+             uptime
+             uname -a
+             hostname
+  
+
